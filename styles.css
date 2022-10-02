@@ -1,0 +1,271 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+
+#header{
+    display: flex;
+    position:fixed;
+    top:0;
+    left: 0;
+    height: 9.95rem;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-bottom: solid 1px #000;
+}
+.logo{
+    width: 50%;
+    max-width: 20rem;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem 1re;
+}
+.img-logo{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-bar{
+    width: 50%;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 2rem;
+}
+
+
+main{
+    margin-top: 9.95rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#Mission{
+    background-image: url(./assets/jumbotron.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 45rem;
+    padding-top: 20rem ;
+    margin-top: -1rem;
+    line-height: 5rem;
+}
+ #Mission>h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+ }
+ 
+ #Mission>h2, #Mission>p{
+    background-color: 	rgba(0,0,0,0.5);
+    color: white;
+ }
+p{
+    font-size: 1.8rem;
+    font-family: 'Mukta', sans-serif;
+    
+}
+#Movies{
+    margin: 2rem;
+}
+#Poster-container{
+    margin: 4rem auto 8rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+}
+.poster{
+    padding: 2rem 0 2rem;
+    width: 20.5rem;
+}
+#Movies > h2{
+    margin: 5rem auto 2rem;
+}
+h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: 'Libre Bodoni', serif;
+}
+figcaption{
+    font-size: 1.8rem;
+    font-family: 'Mukta', sans-serif;
+}
+.EEAO{
+    background-color: #822E3C;
+    color: #2DA66B
+}
+.EEAO a:link, .TGK a:link, .Ene:link, .LDB:link, .Ari:link, span:not([class="year"]){
+    font-weight: bold;
+}
+.EEAO a:visited, .TGK a:visited, .Ene a:visited, .LDB a:visited, .Ari a:visited{
+    color: #000;
+}
+.EEAO a:hover, .EAAO a:active{
+    background-color: #2DA66B;
+    color: #822E3C;
+}
+.TGK{
+    background-color: #D61620;
+    color: #EEE420;
+}
+.TGK a:hover, .TGK a:active{
+    color: #D61620;
+    background-color: #EEE420;
+}
+.Ene{
+    background-color: #F3F3F3;
+    color:#6F4619;
+}
+.Ene a:hover, .Ene a:active{
+    background-color: #6f4619;
+    color: #F3F3F3;
+}
+.LDB{
+    background-color: #FABCBC;
+    color: #529B99;
+}
+.LDB a:hover, .LDB a:active{
+    background-color: #529B99;
+    color:#FABCBC;
+}
+.Ari{
+    background-color: #259B64;
+    color:#9B0D44;
+}
+.Ari a:hover, .Ari a:active{ 
+    background-color: #9B0D44;
+    Color: #259B64;
+}
+#Directors{
+    padding: 2rem;
+}
+.Director-wrappers{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin: 2rem auto;
+    padding: 2rem 0 2rem;
+}
+
+.director-picture{
+    width: 20.5rem; 
+}
+
+h3{
+    font-size: 2rem;
+    font-family:'Libre Bodoni', serif;;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+    width: 100%;
+    line-height: 2rem;
+}
+.contact>h3{
+    text-align: center; 
+}
+form{
+    margin-top:  1rem;
+    margin-left: 1rem;
+}
+.email{
+    border: solid 1px #000;
+    height: 4rem;
+    width: 25rem;
+}
+.email::placeholder{
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+}
+button{
+    border: solid 1px black;
+    height: 4rem;
+    width: 8rem;
+    background-color: #000;
+    color: #FFF;
+}
+button:hover, button:active{
+    color: #000;
+    background-color: #FFF;
+}
+.follow{
+    width: 50%;
+}
+.follow>h3{
+    text-align: center;
+}
+.logos{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-brands{
+    font-size: 4rem;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+.allegations{
+    margin-top: 5rem;
+    text-align: center;
+    border: solid 1px black;
+}
+@media only screen and (max-width: 400px){
+    #header{
+        justify-content: space-around;
+    }
+    .img-logo{
+        max-width: 10rem;
+        margin: 2.5rem auto 2.5rem 0.5rem;
+    }
+    .nav-bar{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 600px){
+    #header{
+        justify-content: space-around;
+    }
+    .img-logo{
+        max-width: 10rem;
+        margin: 2.5rem auto 2.5rem 0.5rem;
+    }
+    .nav-bar{
+        justify-content: space-between;
+    }
+    .Director-wrappers{
+        display: flex;
+        flex-flow: column;
+    }
+    #Poster-container{
+        display: flex;
+        flex-flow: column;
+    }
+    footer{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    form{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+}
