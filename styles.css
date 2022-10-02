@@ -224,20 +224,7 @@ a{
     text-align: center;
     border: solid 1px black;
 }
-@media only screen and (max-width: 400px){
-    #header{
-        justify-content: space-around;
-    }
-    .img-logo{
-        max-width: 10rem;
-        margin: 2.5rem auto 2.5rem 0.5rem;
-    }
-    .nav-bar{
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-    }
-}
+
 @media only screen and (max-width: 600px){
     #header{
         justify-content: space-around;
