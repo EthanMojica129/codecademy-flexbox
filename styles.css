@@ -235,6 +235,10 @@ a{
     }
     .nav-bar{
         justify-content: space-between;
+        margin-right: 3.5rem;
+    }
+    .nav-bar > p{
+        margin: 0 0.20rem
     }
     .Director-wrappers{
         display: flex;
