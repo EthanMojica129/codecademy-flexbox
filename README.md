@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://product-preview-card-frontendmentors.vercel.app/)
+- Live Site URL: (https://codecademy-flexbox-2gss.vercel.app/)
 
 ## My process
 
